@@ -1,2 +1,2 @@
 # Exercises-By-MrJude
-Exercises By MrJude done by Peter Nelson Subrata 
+Exercises By MrJude done by Peter Nelson Subrata =)
