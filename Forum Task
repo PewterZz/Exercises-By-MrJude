@@ -4,10 +4,10 @@ program = 0
 while program == 0:
     # Inputs
     Numerator = eval(input("Enter a Numerator, Value must be > 0 : "))
-    while Numerator < 0:
+    while Numerator <= 0:
         Numerator = eval(input("Please re-enter a Numerator, Value must be > 0 : "))
     Denominator = eval(input("Enter a Denominator, Value must be > 0 : "))
-    while Denominator < 0:
+    while Denominator <= 0:
         Denominator = eval(input("Please re-enter a Denominator, Value must be > 0 : "))
     # Driver
     gcd = math.gcd(Numerator, Denominator)
