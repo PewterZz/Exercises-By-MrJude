@@ -6,6 +6,7 @@ def calc_new_height():
     curras = height/width
     needhei = curras * desire
 
-    print("The corresponding height is: ", needhei )
+    print("The corresponding height is: ", needhei)
+    return needhei
 
 calc_new_height()
