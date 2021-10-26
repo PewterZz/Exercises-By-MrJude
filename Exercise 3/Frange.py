@@ -9,7 +9,7 @@ def Frange(Start, Stop = None, Inc = None):
         count = 0
         rangers = float(str(math.floor(Start)) + str(ranger))
         while count < rangers:
-            print((count) / (10 ** floats), end=", ")
+            print((count) / (10 ** floats), end="  ")
             count += 1
     elif Stop != None and Inc != None:
         start = str(Start)
@@ -29,7 +29,7 @@ def Frange(Start, Stop = None, Inc = None):
         rangers3 = float(str(math.floor(Inc)) + str(ranger3))
 
         while rangers < rangers2:
-            print((rangers) / (10 ** floats2), end=", ")
+            print((rangers) / (10 ** floats2), end="  ")
             rangers += rangers3
 
     else:
@@ -46,7 +46,7 @@ def Frange(Start, Stop = None, Inc = None):
 
 
         while rangers < rangers2:
-            print((rangers) / (10 ** floats2), end=", ")
+            print((rangers) / (10 ** floats2), end="  ")
             rangers += 1
 
 Frange(1.0,5.0,0.1)
