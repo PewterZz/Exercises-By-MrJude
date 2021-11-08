@@ -8,6 +8,7 @@ list = []
 
 punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
+# to remove the non word characters
 for i in book2:
     if i in punc:
         book2 = book2.replace(i, "")
