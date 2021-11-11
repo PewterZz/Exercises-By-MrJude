@@ -2,7 +2,7 @@ import os
 
 
 os.chdir(r'C:\Users\ACER\Desktop')
-file = open("Links.txt", "r")
+file = open("Deok.txt", "r")
 book = file.readlines()
 punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
 
