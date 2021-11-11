@@ -2,7 +2,7 @@ import os
 
 
 os.chdir(r'C:\Users\ACER\Desktop')
-file = open("Links.txt", "r")
+file = open("Deok.txt", "r")
 file2 = open("thesecondone.txt", "w")
 book = file.readlines()
 count = 1
