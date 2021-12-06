@@ -1,5 +1,5 @@
 class PricesPNS:
-    #Initialization of all the variables, private variables are set to none as to not disturb the normal parameter
+    # Initialization of all the variables, private variables are set to none as to not disturb the normal parameter
     def __init__(self, dish, weight,food=None, pounds=None, price=None, total=None):
         self.dish = dish
         self.weight = weight
@@ -7,7 +7,7 @@ class PricesPNS:
         self.pounds = pounds
         self.price = price
         self.total = total
-    #function of if statements to check for the price of the item
+    # function of if statements to check for the price of the item
     def __PriceListPNS(self):
         if self.dish == 'Dry Cured Iberian Ham':
             self.price = 177.80
@@ -27,10 +27,10 @@ class PricesPNS:
             self.price = 270.81
         else:
             self.price = 0.00
-    #extra function to call the private function inside the class and check the prices
+    # extra function to call the private function inside the class and check the prices
     def checkitemPNS(self):
         self.__PriceListPNS()
-    #calculating function
+    # calculating function
     def totalcostPNS(self):
         self.__PriceListPNS()
         cost = self.weight * self.price
