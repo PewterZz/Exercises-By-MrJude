@@ -1,4 +1,4 @@
-import Module
+import ModulePNS
 
 
 # imported class from ModulePNS.py
