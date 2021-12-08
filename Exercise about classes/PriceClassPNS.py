@@ -58,6 +58,9 @@ def showlistPNS(list):
     totalprice = calculate(list)
     print('\nTotal Cost: $' + str(totalprice))
 
+def main():
+    brother = createlistPNS()
+    showlistPNS(brother)
 
-brother = createlistPNS()
-showlistPNS(brother)
+main()
+
