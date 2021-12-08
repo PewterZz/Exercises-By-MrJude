@@ -33,6 +33,15 @@ def createlistPNS():
         objects.append(instance)
     return objects
 
+#Calculation function
+def calculate(object):
+    totalprice = 0
+    for i in object:
+        i.checkitemPNS()
+        totalprice += i.totalcostPNS()
+    return totalprice
+
+
 
 # Function to show the list in an ordered manner, for getting attributes i used getattr() and referenced the variables in the class, inside the list are the objects made from before.
 def showlistPNS(list):
@@ -44,9 +53,9 @@ def showlistPNS(list):
         print('item:', i.getdishPNS())
         print('Amount ordered: ', i.getweightPNS(), 'Pounds')
         print('Price per pound: ', '$' + str(i.getpricePNS()))
-        print('Price of order: ', '$' + str(i.totalcostPNS()))
+        print('Price of order: ', '$' + str(i.totalcostPNS()),"\n")
         # total price of all items added together for each object
-        totalprice += i.totalcostPNS()
+    totalprice = calculate(list)
     print('\nTotal Cost: $' + str(totalprice))
 
 
