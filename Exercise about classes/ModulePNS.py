@@ -1,13 +1,26 @@
 class PricesPNS:
-    # Initialization of all the variables, private variables are set to none as to not disturb the normal parameter
-    def __init__(self, dish, weight,food=None, pounds=None, price=None, total=None):
+# Initialization of all the variables, private variables are set to none as to not disturb the normal parameter
+    def __init__(self, dish, weight, price=None, total=None):
         self.dish = dish
         self.weight = weight
-        self.food = food
-        self.pounds = pounds
         self.price = price
         self.total = total
-    # function of if statements to check for the price of the item
+
+
+# I placed getter methods in the class instead of getattr() for better practice
+    def getdishPNS(self):
+        return self.dish
+
+    def getweightPNS(self):
+        return self.weight
+
+    def getpricePNS(self):
+        return self.price
+
+    def gettotalPNS(self):
+        return self.total
+
+#function of if statements to check for the price of the item
     def __PriceListPNS(self):
         if self.dish == 'Dry Cured Iberian Ham':
             self.price = 177.80
@@ -27,10 +40,11 @@ class PricesPNS:
             self.price = 270.81
         else:
             self.price = 0.00
-    # extra function to call the private function inside the class and check the prices
+#extra function to call the private function inside the class and check the prices
     def checkitemPNS(self):
         self.__PriceListPNS()
-    # calculating function
+
+#calculating function
     def totalcostPNS(self):
         self.__PriceListPNS()
         cost = self.weight * self.price
