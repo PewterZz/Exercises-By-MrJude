@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main2{
+public class PrintArray{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number of items: ");
