@@ -28,15 +28,16 @@ public class main2{
                 Scores[0] = Scores[i+1];
             }
         }
-        System.out.printf("The maximum is: %d", Scores[0]);
-        System.out.println();
 
         for (int i = 0; i+1 < numStudents; i++){
             if(Scores2[0] > Scores2[i+1]){
                 Scores2[0] = Scores2[i+1];
             }
         }
+
         System.out.printf("The minimum is: %d", Scores2[0]);
+        System.out.println();
+        System.out.printf("The maximum is: %d", Scores[0]);
 
 
     }
